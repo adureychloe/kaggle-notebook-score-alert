@@ -1,0 +1,22 @@
+ref                                                       title                                            author               lastRunTime                 totalVotes  
+--------------------------------------------------------  -----------------------------------------------  -------------------  --------------------------  ----------  
+shunyafukuda/base-eda                                     base_EDA                                         SHUNYA FUKUDA        2025-10-18 16:07:05.793000           2  
+creditor/hull-tactical-score-by-model-leak-safe           Hull Tactical - Score by Model - Leak Safe       Madao                2025-10-18 06:42:03.063000          15  
+audriusp/hull-initial                                     Hull_Initial                                     AudriusP             2025-10-18 03:01:26.920000           8  
+morodertobias/hull-leak-safe-baseline                     Hull - Leak Safe Baseline                        tmoroder             2025-10-11 19:14:35.910000          36  
+junaid512/hulltactical-market-prediction                  HULLTactical Market Prediction                   Muhammad Junaid      2025-10-10 13:17:19.827000          31  
+devanshshukla123/gradientboostingregressor                GradientBoostingRegressor                        Devansh Shukla@123   2025-10-18 23:22:08.217000           3  
+josephmakaumunyao/hull-tactical-market-prediction         Hull_Tactical_Market_Prediction                  Joseph Makau Munyao  2025-10-17 16:37:47.773000           1  
+zhanhuang522/notebook005333d334                           notebook005333d334                               zhanhuang522         2025-10-19 00:21:25.030000           0  
+junjitakeshima/hull-basic-approach-and-new-feature-eng    [Hull] Basic Approach and new feature (»’±æ’Z/Eng)  Junji Takeshima      2025-10-10 11:39:00.580000          32  
+mdferozahmedafm/hull-tactical-market-prediction-strategy  Hull Tactical | Market Prediction & Strategy     Md Feroz Ahmed       2025-10-05 13:24:25.600000          31  
+khai42/hull-tactical-submission-score-17-396              Hull Tactical submission score 17.396            Khai_42              2025-10-11 05:27:05.257000          60  
+alnourabdalrahman9/hull-tactical-v11-pure-optimization    Hull Tactical v11 Pure Optimization              Alnour_Abdalrahman9  2025-10-15 14:09:54.027000          16  
+b'tihon2010/hull-tactical-0-496                             Hull Tactical - 0.496                            Phantom_\xf0\x9f\x91\xbb            2025-10-10 08:46:03.357000          25  '
+jiaoyouzhang/hull-ridge-lr-lasso-step-by-step             Hull | Ridge - LR - Lasso - Step By Step         less submissions     2025-10-16 07:12:01.900000          12  
+lordpatil/feature-engineering-with-xgboost                feature engineering with xgboost                 VectorQL             2025-10-05 15:33:04.813000          14  
+b'harshitakumari256/lstm-hull-tactical                      \xf0\x9f\x91\xbd\xf0\x9f\x91\xbdLSTM: HULL TACTICAL                            Harshita Kumari      2025-10-06 11:59:13.360000          20  '
+b'harshitakumari256/xgbregressor-eda-imputation             \xe2\x9c\xa8\xf0\x9f\x93\x9aXGBREGRESSOR+EDA+IMPUTATION\xf0\x9f\xa7\xa0\xf0\x9f\xa7\xa0                  Harshita Kumari      2025-10-07 03:02:22.340000          18  '
+zhanhuang522/hull-starter-notebook-floating-window        Hull Starter Notebook-Floating window            zhanhuang522         2025-10-18 20:41:28.730000           0  
+mst8823/hull-tactical-itransformer-gaussiannllloss        [Hull Tactical] iTransformer | GaussianNLLLoss   MST                  2025-10-13 03:05:34.957000           7  
+b'wasiqaliyasir/lightgbm-hull-prediction-9-003-score        \xf0\x9f\x94\xaeLightGBM \xf0\x9f\x91\xa8\xe2\x80\x8d\xf0\x9f\x92\xbb Hull Prediction | 9.003 Score      Wasiq Ali            2025-10-07 17:50:35.397000          14  '
