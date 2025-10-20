@@ -1,6 +1,6 @@
 # Kaggle Notebook Score Monitor
 
-This small tool monitors the Kaggle competition "Code" page and sends Bark notifications when a notebook with a higher score appears.
+This small tool monitors Kaggle competition notebooks via API and sends Bark notifications when a new top notebook appears (sorted by score).
 
 Files:
 - `monitor_kaggle.py` - main monitoring script
@@ -29,24 +29,37 @@ python bark_test.py --title "From .env" --body "Hello"
 
 Optional parameters: `--icon`, `--sound`, `--copy`, `--url` to set Bark-specific options.
 
-Usage:
-1. Install dependencies:
+## Setup
+
+1. **Install dependencies:**
    pip install -r requirements.txt
 
-2. Create a `.env` file (or pass `--bark`):
-   BARK_KEY=your_bark_key_here
+2. **Set up Kaggle API:**
+   - Go to [Kaggle Account Settings](https://www.kaggle.com/account) and create a new API token (downloads `kaggle.json`)
+   - Place `kaggle.json` in `~/.kaggle/kaggle.json` (Linux/macOS) or `C:\Users\<USERNAME>\.kaggle\kaggle.json` (Windows)
+   - Or set environment variables `KAGGLE_USERNAME` and `KAGGLE_KEY`
 
-3. Run once:
-   python monitor_kaggle.py --competition hull-tactical-market-prediction --once
+3. **Set up Bark notifications:**
+   - Create a `.env` file or pass `--bark` directly
+   - `BARK_KEY=your_bark_key_here`
 
-4. Run continuously (poll every 5 minutes):
-   python monitor_kaggle.py --competition hull-tactical-market-prediction
+## How It Works
+
+The script fetches kernels/notebooks for the specified competition using the Kaggle API, sorted by score descending. Since precise scores may not be publicly available, it monitors changes in the top-ranked notebook. When a new notebook becomes the top-ranked one, a Bark notification is sent.
+
+## Usage
+
+- **Run once:**
+  python monitor_kaggle.py --competition hull-tactical-market-prediction --once
+
+- **Run continuously (poll every 5 minutes):**
+  python monitor_kaggle.py --competition hull-tactical-market-prediction
 
 Scheduling:
 - Windows: use Task Scheduler to run the script periodically
 - Linux/macOS: use cron or systemd timers
 
 Notes & Caveats:
-- This script scrapes the Kaggle page and may break if Kaggle changes their HTML.
-- Kaggle may enforce rate limits or require authentication for detailed info; for heavy monitoring consider using Kaggle APIs if available.
-
+- The script uses the Kaggle CLI to fetch notebook data sorted by score. Actual score values may not be visible if not logged in as participant.
+- Notifications trigger when the top notebook changes, as an indicator of new higher scores.
+- Respects Kaggle API rate limits and requires authentication via `kaggle.json` or env vars.
